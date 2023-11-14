@@ -7,4 +7,15 @@ function MeuEscopo(){
 
 }
 
+function MeuEscopo2(){
+
+//                        0         1         2
+//                     0  1  2   0  1  2   0  1  2
+    const numeros2 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+    const [lista1, lista2, lista3] = numeros2;
+    console.log(lista3[2]);
+
+}
+
 MeuEscopo();
+MeuEscopo2();
