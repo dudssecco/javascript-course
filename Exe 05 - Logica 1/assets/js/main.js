@@ -1,11 +1,5 @@
-function Maior(num1, num2){
-
-    if(num1 !== num2){
-    let result = num1 > num2 ? num1 : num2
-    console.log(result)
-    } else{
-        console.log('Números iguais.')
-    }
+const maior = (x, y) => {
+    return x > y ? x : y
 }
 
-Maior(101, 101);
+console.log(maior(5, 2))
