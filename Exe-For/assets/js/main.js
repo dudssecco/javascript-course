@@ -11,7 +11,7 @@ const div = document.createElement('div')
 for (let i = 0; i < elementos.length; i++){
     let {tag, texto} = elementos[i]
     let tagHTML = document.createElement(tag)
-    tagHTML.innerHTML = texto
+    tagHTML.innerText = texto
     div.appendChild(tagHTML)
 }
 
