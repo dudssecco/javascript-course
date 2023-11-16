@@ -1,7 +1,7 @@
 const frutas = ['Maça', 'Uva', 'Melancia']
 
 for (let i in frutas){
-    console.log(frutas[i])
+    console.log(i, frutas[i])
 }
 
 const pessoas = {
