@@ -15,5 +15,11 @@ function retornaHora(data){
     })
 }
 
-const hora = retornaHora()
-console.log(hora)
+try{
+    const hora = retornaHora()
+    console.log(retornaHora())
+} catch(e){
+    // Tratar Erro
+} finally{
+    console.log('Tenha um bom dia')
+}
