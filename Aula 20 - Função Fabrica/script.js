@@ -29,4 +29,11 @@ const p1 = criaPessoa('Duds', 'Secco', 1.84, 60)
 const p2 = criaPessoa('Lets', 'Martins', 1.64, 50)
 const p3 = criaPessoa('Dog', 'Golden', 1.20, 40)
 
-console.log(p1.imc)
+console.log(p1.nomeCompleto)
+p1.nomeCompleto = 'Eduardo Cascaes Secco'
+console.log(p1.nome)
+console.log(p1.sobrenome)
+console.log(p1.nomeCompleto)
+
+
+
