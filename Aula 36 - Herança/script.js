@@ -49,4 +49,3 @@ caneca.estoque = 100
 
 console.log(camiseta)
 console.log(caneca)
-    
