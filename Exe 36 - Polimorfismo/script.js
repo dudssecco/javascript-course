@@ -59,7 +59,7 @@ function ContaPoupanca(agencia, conta, saldo){
 ContaPoupanca.prototype = Object.create(Conta.prototype)
 ContaPoupanca.prototype.constructor = ContaPoupanca
 
-
+/* ----------------------------------- */
 
 const conta1 = new ContaPoupanca(131, 1, 100)
 conta1.sacar(105)
