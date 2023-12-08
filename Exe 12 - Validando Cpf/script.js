@@ -26,7 +26,6 @@ ValidaCPF.prototype.criaDigito = function(cpfParcial) {
     let regressivo = cpfArray.length + 1
 
     const total = cpfArray.reduce((ac, valor) => {
-        regressivo * valor
         ac += (regressivo * Number(valor))
         regressivo--
         return ac
