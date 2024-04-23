@@ -16,7 +16,7 @@ function esperaAi(msg, tempo){
 esperaAi('Frase 1', numAleatorio(1, 5))
 .then((resposta) => {
     console.log(resposta)
-    return esperaAi(22222, numAleatorio(1, 5))
+    return esperaAi('Frase 2', numAleatorio(1, 5))
 }).then((resposta) => {
     console.log(resposta)
     return esperaAi('Frase 3', numAleatorio(1, 5))
