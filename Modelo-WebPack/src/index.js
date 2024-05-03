@@ -1,1 +1,1 @@
-let duds = 2
+import './assets/css/style.css';
