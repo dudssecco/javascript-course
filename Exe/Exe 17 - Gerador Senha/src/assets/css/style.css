@@ -56,3 +56,20 @@ form button {
 form button:hover {
   background: var(--primary-color-darker);
 }
+
+.senha-gerada{
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin: 40px 0;
+}
+
+input[type="checkbox"]{
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+}
+
+button{
+  margin: 40px 0;
+  font-size: 1rem;
+}
