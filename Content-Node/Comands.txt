@@ -1,0 +1,15 @@
+npm init -y:                        Iniciar o node
+npm install (nome):                 instalar biblioteca / pacote
+npm install express:                instalar express
+npm install express --save-dev:     instalar express nas DevDependences
+npm install express --save-prod:    instalar express nas Dependences
+npm install express@2.1.0:          instalar o express na versão 2.1.0
+npm install express@2.1.0 -E:       instalar versão especifica sem atualização
+npm unistall express:               desistalar express
+
+
+Versões: 2.1.0
+
+2 -> Major: Quebra de compatibilidade com versões anteriores
+1 -> Minor: Add recurso novo
+0 -> Path:  Correção de bug
