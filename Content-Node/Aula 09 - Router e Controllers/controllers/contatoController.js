@@ -1,8 +1,3 @@
 exports.enviarContato = (req, res) => {
-    res.send(
-        `<form action ="/" method = "POST">
-        Envie seu Contato: <input type="text" name="nome">
-        <button>Enviar Form</button>
-        </form>`
-    )
+    res.send('Obrigado por entrar em contato')
 }
