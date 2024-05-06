@@ -1,20 +1,9 @@
 const express = require('express')
 const app = express()
 
-/*
-        Criar   Ler   Atualizar  Apagar
-CRUD -> CREATE, READ, UPDATE,    DELETE
-        POST    GET   PUT        DELETE
-*/
+// http://facebook.com/profiles/(url-parametro)?(query-strings)&(query-strings)
 
-/*
-http://meusite.com/ -> GET -> Entregue a página '/'
-http://meusite.com/sobre -> GET -> Entregue a página '/sobre'
-http://meusite.com/contato -> GET -> Entregue a página '/contato'
-*/
-
-// Geralmente utilizamos portas não utilizadas como: 3000
-// Iniciar no terminar: node (nome do arquivo) => node server.js
+app.use(express.urlencoded({extended: true}))
 
 app.get('/', (req, res) => {
     res.send(
@@ -26,11 +15,14 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', (req, res) => {
-    res.send("Formulário enviado com sucesso!")
+    console.log(req.body)
+    res.send(`O que você me enviou foi ${req.body.nome}.`)
 })
 
-app.get('/contato', (req, res) => {
-    res.send('Obrigado por entrar em contato!')
+app.get('/testes/:idUsuario?', (req, res) => {  //? Faz o parametro ser opcional
+    console.log(req.params)
+    console.log(req.query)
+    res.send(req.params.idUsuario)
 })
 
 app.listen(3000, () => {
