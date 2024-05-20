@@ -1,0 +1,5 @@
+<% Controle de Fluxo (if, for, switch... JavaScript) %> 
+<%= Imprime escapando caracteres (mostra) %>
+<%- Imprime sem escapar caracteres (executa) %>
+<%# Comentário %>
+<%- include('caminho do arquivo') - inclui o arquivo %>
